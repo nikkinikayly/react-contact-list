@@ -61,10 +61,10 @@ class App extends Component {
         <Header as="h1">React Contact List</Header>
         <br />
         <Segment>
+        <h3>New Contact</h3>
           <Button icon color="blue" onClick={this.toggleForm}>
             <Icon name={ showForm ? 'angle double up' : 'angle double down'} />
           </Button>
-          <h3>New Contact</h3>
           {showForm ?  <ContactForm add={ this.addContact } /> : null }
         </Segment>
         <br />
